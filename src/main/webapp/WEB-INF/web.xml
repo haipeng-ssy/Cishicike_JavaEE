@@ -23,12 +23,12 @@
 	<filter-name>encodingFilter</filter-name>
 	<url-pattern>/*</url-pattern>
 </filter-mapping>
-<listener>
+<!-- <listener>
 	<description>spring监听器</description>
 	<listener-class>org.springframework.web.context.ContextLoaderListener
 	</listener-class>
 </listener>
-
+ -->
 <!-- 防止spring内存溢出监听器 -->
 <listener>
 	<listener-class>org.springframework.web.util.IntrospectorCleanupListener
@@ -58,7 +58,7 @@
         <!-- 欢迎页面 -->
     <welcome-file-list>
         <!-- 浏览器版本检查 -->
-        <welcome-file>/login.jsp</welcome-file>
+        <welcome-file>/index.jsp</welcome-file>
     </welcome-file-list>
     <!-- 配置session超时时间，单位分钟 -->
     <session-config>
