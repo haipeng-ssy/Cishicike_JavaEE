@@ -4,10 +4,10 @@
 <display-name>cishicike</display-name>
 <!-- 业务层和持久层的spring配置文件，这些配置文件被spring父容器使用 -->
 <!-- 指定Spring Bean的配置文件所在目录。默认配置在WEB-INF目录下 -->
-<!-- <context-param>
+<context-param>
 	<param-name>contextConfigLocation</param-name>
 	<param-value>classpath:applicationContext.xml</param-value>
-</context-param> -->
+</context-param>
 <filter>
 	<description>字符集过滤器</description>
 	<filter-name>encodingFilter</filter-name>
@@ -23,12 +23,12 @@
 	<filter-name>encodingFilter</filter-name>
 	<url-pattern>/*</url-pattern>
 </filter-mapping>
-<!-- <listener>
+<listener>
 	<description>spring监听器</description>
 	<listener-class>org.springframework.web.context.ContextLoaderListener
 	</listener-class>
 </listener>
- -->
+
 <!-- 防止spring内存溢出监听器 -->
 <listener>
 	<listener-class>org.springframework.web.util.IntrospectorCleanupListener
