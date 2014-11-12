@@ -34,7 +34,7 @@
 		<property name="annotatedClasses">
 			<list>
 				<!-- 中间写入hibernate注解的实体 -->
-				
+				<value>Customer.hbm.xml</value>
 			</list>
 		</property>
 	</bean>
